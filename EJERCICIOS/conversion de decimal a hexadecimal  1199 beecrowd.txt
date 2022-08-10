@@ -1,0 +1,56 @@
+
+#1199
+
+#obtener el valor hexadecimal
+
+def obt_hexa(valor):
+    valor = str(valor)
+    igualdad = {
+        "10": "a",
+        "11": "b",
+        "12": "c",
+        "13": "d",
+        "14": "e",
+        "15": "f",
+    }
+    if valor in igualdad:
+        return igualdad[valor]
+    else:
+        return valor
+
+#obtener el hexadecimal
+
+def obt_hexa(valor):
+    valor = str(valor)
+    igualdad= {
+        "10": "A",
+        "11": "B",
+        "12": "C",
+        "13": "D",
+        "14": "E",
+        "15": "F",
+    }
+    if valor in igualdad:
+        return igualdad[valor]
+    else:
+        return valor
+
+# de decimal a hexadecimal
+def deci_a_hexa(deci):
+    hexa = ""
+    while deci > 0:
+        residuo = deci % 16
+        verdadero = obt_hexa(residuo)
+        hexa = verdadero + hexa
+        deci = int(deci/ 16)
+    return hexa
+
+
+deci= int(
+    input("Escribe un número: "))
+hexa = deci_a_hexa(deci)
+print(f"Su decimal {deci} y en hexadecimal 0x{hexa}")
+
+
+a= input("escriba un numero: ")
+print (int (int(a, 16)))

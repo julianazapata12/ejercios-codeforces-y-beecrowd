@@ -1,0 +1,12 @@
+for j in range (int(input())):
+    z= int(input())
+    cadena= ''
+    j=9
+#un ciclo para poder encontrar el numero variado minino donde recorre toda la cadena, y le asigna el numero correspondiente
+# y empieza desde el numero mayor, hasta el numero menor, restandole -1.
+
+    while (z>j):
+        cadena= str(j) + cadena
+        z=z - j
+        j=j - 1
+    print (str(z)+ cadena)

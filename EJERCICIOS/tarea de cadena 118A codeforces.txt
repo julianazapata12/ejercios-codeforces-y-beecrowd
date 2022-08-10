@@ -1,0 +1,7 @@
+print(" introduzca la oracion") 
+oracion = input()
+for letra in oracion:
+    if letra=="a" or letra=="e" or letra=="i" or letra=="o" or letra=="u" or letra=="y" or letra=="A" or letra=="E" or letra=="I" or letra=="O" or letra=="U" or letra=="Y": 
+         print(".", end ="")
+    else:
+        print(str(letra), end="")

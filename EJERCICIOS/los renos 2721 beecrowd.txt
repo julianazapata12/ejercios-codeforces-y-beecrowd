@@ -1,0 +1,50 @@
+#beecrowd
+#2721
+
+numeroRenos = ['Rudolph','Dasher', 'Dancer', 'Prancer', 'Vixen', 'Comet', 'Cupid', 'Donner', 'Blitzen']
+totalbolas = 0
+reno = input().split()      #pido datos con un split, 
+for i in reno:              #recorre el string
+    totalbolas+=int(i)      # suma cada numero de bolas
+print(numeroRenos[totalbolas % 9])
+
+#entrega la resta. 
+
+
+
+
+
+==================================== /// ===================================================================================
+numeroRenos = ['Rudolph','Dasher', 'Dancer', 'Prancer', 'Vixen', 'Comet', 'Cupid', 'Donner', 'Blitzen']
+bolas = []
+sBolas = 0
+
+#len para devolver el valor ente
+for reno in range(len(numeroRenos)):
+    
+    print(f'Introduzca numero de bolas de nieve: reno 1')
+    totalBolas1 = int(input())
+    print(f'Introduzca numero de bolas de nieve: reno 2')
+    totalBolas2 = int(input())
+    print(f'Introduzca numero de bolas de nieve: reno 3')
+    totalBolas3 = int(input())
+    print(f'Introduzca numero de bolas de nieve: reno 4')
+    totalBolas4 = int(input())
+    print(f'Introduzca numero de bolas de nieve: reno 5')
+    totalBolas5 = int(input())
+    print(f'Introduzca numero de bolas de nieve: reno 6')
+    totalBolas6= int(input())
+    print(f'Introduzca numero de bolas de nieve: reno 7')
+    totalBolas7 = int(input())
+    print(f'Introduzca numero de bolas de nieve: reno 8')
+    totalBolas8= int(input())
+    print(f'Introduzca numero de bolas de nieve: reno 9')
+    totalBolas9 = int(input())
+    
+    break
+    
+    if(totalBolas >= 1 and totalBolas<= 10000):
+        sbolas += totalBolas
+        bolas.append(tBolas)
+
+print(numeroRenos[sBolas % 9])
